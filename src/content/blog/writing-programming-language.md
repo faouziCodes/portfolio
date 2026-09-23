@@ -1,214 +1,44 @@
 ---
-title: 'Writing a Programming Language'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+title: 'Writing a Programming Language In Ocaml'
+description: 'Menhir is my everything.'
 pubDate: 'Sep 23, 2026'
 heroImage: '../../assets/programming.png'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+I'm writing a programming languag. Interpretted. In OCAML! And I just love it.
+My favorite programming project is writing a programming language. 
+I love the process of taking text in a file and making it into a program that does something.
+I love designing the language, what I want the user to be able to do, how I want the language to look like and work.
+And for those of you who have never written a programming language before, doing it in OCaml using Menhir is just too much fun.
 
-## Headings
+## OCaml and Menhir
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+### What is Menhir?
 
-# H1
+Menhir is a parser generator for OCaml. It takes a grammar specification and generates a parser for that grammar.
+And it is one of the easiest parser generators I have ever used. It is so easy to take a grammar specification and generate a parser.
+I love the simplicity and ease of use of Menhir.
 
-## H2
+### What is OCaml?
 
-### H3
+OCaml is a functional programming language. It is a statically typed language that supports pattern matching and recursion.
+It is exactly that pattern matching and recursion that is so fun and makes it much easier to write a programming language.
+Altough I would normally recommend you to use a different language for interpreters, because OCaml isn't the fastest language for interpreters, I am using it anyway. Mostly because I am not planning to write a programming language that is supposed to compete with other languages, I'm just doing this for fun. OCaml and Menhir is just a whole load of fun.
 
-#### H4
+### Summary
 
-##### H5
+Overall, writing a programming language in OCaml using Menhir is a fun and rewarding experience, and it is one of the easier combo's to write a programming language in.
 
-###### H6
 
-## Paragraph
+## Writing an interpretter
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+As of right now I'm starting with the back-end of the language, the interpreter, making it able to run the parsed AST.
+I start with this before writing the front-end of the interpreter, mostly because I want to design the functionality of the back-end first and then build the front-end around it.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+The back-end is going to take the parsed AST and run it. It will make the Ast and actually run it like a program. As of right now it is very simple, it wil evaluate parts of the AST and run it direclty. My main goals right now are to be able to do loops, conditionals, control flow statements and binary operations. After that I want to build in functionality for variables, functions, and other language features. Allowing the user to write programs that can print to the console and much more.
 
-## Images
+I want my the functionality to be easily extendable, so that I can add new language features without having to rewrite the interpreter from scratch.
 
-### Syntax
+You can find the interpreter [here](https://github.com/faouziCodes/lang).
 
-```markdown
-![Alt text](./full/or/relative/path/of/image)
-```
-
-### Output
-
-![blog placeholder](../../assets/blog-placeholder-about.jpg)
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-### Blockquote without attribution
-
-#### Syntax
-
-```markdown
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-```
-
-#### Output
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-### Blockquote with attribution
-
-#### Syntax
-
-```markdown
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-```
-
-#### Output
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-### Syntax
-
-```markdown
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-```
-
-### Output
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-### Syntax
-
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
-
-````markdown
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-````
-
-### Output
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-### Ordered List
-
-#### Syntax
-
-```markdown
-1. First item
-2. Second item
-3. Third item
-```
-
-#### Output
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-#### Syntax
-
-```markdown
-- List item
-- Another item
-- And another item
-```
-
-#### Output
-
-- List item
-- Another item
-- And another item
-
-### Nested list
-
-#### Syntax
-
-```markdown
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-```
-
-#### Output
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-### Syntax
-
-```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-```
-
-### Output
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+**to be continued (please read the rest of the blog post later as I continue writing the interpreter and include code examples)**
