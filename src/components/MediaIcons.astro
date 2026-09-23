@@ -1,0 +1,29 @@
+---
+import { GithubIcon, LinkedinIcon, OutlookIcon } from "./icons";
+
+const socials = [
+    {
+        name: "GitHub",
+        href: "https://github.com/faouziCodes",
+        Icon: GithubIcon,
+    },
+    {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/faouzi-bouchkhachekh-496624254/",
+        Icon: LinkedinIcon,
+    },
+    { name: "Outlook", href: "mailto:faouzib1@outlook.com", Icon: OutlookIcon },
+];
+---
+
+<footer class="flex items-center justify-center gap-4">
+    {socials.map(({ name, href, Icon }) => (
+        <a
+            href={href}
+            aria-label={name}
+            class="text-muted-foreground transition-colors hover:text-foreground"
+        >
+            <Icon width={20} height={20} />
+        </a>
+    ))}
+</footer>

@@ -1,0 +1,7 @@
+export { GithubIcon } from "./github"
+export { LinkedinIcon } from "./linkedin"
+export { OutlookIcon } from "./outlook"
+export { JavascriptIcon } from "./javascript"
+export { RustIcon } from "./rust"
+export { OcamlIcon } from "./ocaml"
+export { LaravelIcon } from "./laravel"
